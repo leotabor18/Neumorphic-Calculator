@@ -60,7 +60,7 @@ for (const opName of ['add', 'subtract', 'multiply', 'divide']){
             if(press){
                 history_array.length = 0;
                 history.value = input.value;  
-                console.log('press');
+                press = false;
             }
   
             history_array.push(history_val);
