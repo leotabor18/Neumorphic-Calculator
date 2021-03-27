@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: rgba(39, 39, 39, 0.4);
+  font-size: 25px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  -webkit-box-shadow: -6px -6px 9px rgba(32, 32, 32, 0.9), 6px 6px 9px rgba(39, 39, 39, 0.6);
+          box-shadow: -6px -6px 9px rgba(32, 32, 32, 0.9), 6px 6px 9px rgba(39, 39, 39, 0.6);
+  background-image: linear-gradient(147deg, #5a5a5a 0%, rgba(22, 22, 22, 0.8));
+  border-radius: 5px;
+  color: rgba(255, 140, 0, 0.9);
+  padding: 20px;
+  margin: 40px;
+}
+
+main {
+  -webkit-box-shadow: -6px -6px 9px rgba(32, 32, 32, 0.9), 6px 6px 9px rgba(39, 39, 39, 0.6);
+          box-shadow: -6px -6px 9px rgba(32, 32, 32, 0.9), 6px 6px 9px rgba(39, 39, 39, 0.6);
+  background-image: linear-gradient(147deg, #575757 0%, rgba(17, 17, 17, 0.8));
+  padding: 1em;
+  border-radius: 20px;
+  width: 290px;
+}
+
+main button {
+  outline: none;
+}
+
+main .input {
+  -webkit-box-shadow: inset -2px -2px 12px rgba(27, 27, 27, 0.7), inset 2px 2px 9px rgba(0, 0, 0, 0.4);
+          box-shadow: inset -2px -2px 12px rgba(27, 27, 27, 0.7), inset 2px 2px 9px rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 80px;
+  padding: 16px 16px 0px 32px;
+  background-image: linear-gradient(117deg, #383838 10%, rgba(15, 15, 15, 0.8) 125%);
+  border-radius: 10px;
+}
+
+main .input #history {
+  position: relative;
+  border: none;
+  opacity: 0.5;
+  background: none;
+  text-align: end;
+  font-size: 20px;
+  color: #FF8C00;
+  pointer-events: none;
+}
+
+main .input #input {
+  border: none;
+  pointer-events: none;
+  background: none;
+  text-align: end;
+  color: #FF8C00;
+  outline: none;
+}
+
+main .keys_upper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+  margin-top: 20px;
+  background: none;
+}
+
+main button {
+  -webkit-box-shadow: -1px -1px 1px rgba(233, 233, 233, 0.45), 6px 6px 9px rgba(0, 0, 0, 0.4);
+          box-shadow: -1px -1px 1px rgba(233, 233, 233, 0.45), 6px 6px 9px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(145deg, #434343 10%, #000);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+main button:hover, main button:active {
+  background-image: linear-gradient(145deg, #363636, #000);
+}
+
+main button:active {
+  -webkit-box-shadow: inset -2px -2px 12px rgba(27, 27, 27, 0.7), inset 2px 2px 9px rgba(0, 0, 0, 0.4);
+          box-shadow: inset -2px -2px 12px rgba(27, 27, 27, 0.7), inset 2px 2px 9px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translateY(1.2px);
+          transform: translateY(1.2px);
+}
+
+main .key_number {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+main .key_op, main .key_eq {
+  color: #FF8C00;
+}
+/*# sourceMappingURL=style.css.map */

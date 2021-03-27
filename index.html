@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphic Calculator</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./icon.ico" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Neumorphic Calculator</h1>
+    <main>
+        <div class="input" >
+            <input type="text" id='history' value='0'>
+            <input type="text" id='input' value="0">
+        </div>
+
+        <div class="keys_upper">
+            <span style="background: none;"></span>
+            <button class="key_op" data-op="clear">C</button>
+            <button class="key_op"  data-op="backspace">&#8592;</button>
+            <button class="key_op"  data-op="divide">/</button>
+            <button class="key_number">7</button>
+            <button class="key_number">8</button>
+            <button class="key_number">9</button>
+            <button class="key_op" data-op="multiply">x</button>
+            <button class="key_number">4</button>
+            <button class="key_number">5</button>
+            <button class="key_number">6</button>
+            <button class="key_op" data-op="add">+</button>
+            <button class="key_number">1</button>
+            <button class="key_number">2</button>
+            <button class="key_number">3</button>
+            <button class="key_op" data-op="subtract">-</button>
+            <button class="key_number" id="zero">00</button>
+            <button class="key_number" id="zero">0</button>
+            <button class="key_number">.</button>
+            <button class="key_eq">=</button>
+    </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
