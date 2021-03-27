@@ -7,7 +7,7 @@ const backspace = document.querySelector(`.key_op[data-op='backspace']`);
 
 const container = [];
 const history_array = [];
-
+let press = false;
 nums.forEach(element => {
     element.addEventListener('click', event =>{
         if(input.value != '0'){
@@ -31,6 +31,7 @@ equal.addEventListener('click', () =>{
             return;
         }
         input.value = res;
+        press = true;
   }
 });
 
@@ -39,6 +40,7 @@ clear.addEventListener('click', () =>{
     container.length = 0;
     history.value = 0;
     history_array.length = 0;
+    press = false;
 });
 
 backspace.addEventListener('click', () =>{
@@ -46,6 +48,7 @@ backspace.addEventListener('click', () =>{
         input.value = input.value.substr(0, input.value.length - 1);
         if(input.value.length == 0){
             input.value = 0;
+            press = false;
         }
     }
 });
@@ -53,7 +56,13 @@ for (const opName of ['add', 'subtract', 'multiply', 'divide']){
     document.querySelector(`.key_op[data-op=${opName}`)
         .addEventListener('click', event =>{
             const history_val = input.value + event.toElement.innerText;
-
+            
+            if(press){
+                history_array.length = 0;
+                history.value = input.value;  
+                console.log('press');
+            }
+  
             history_array.push(history_val);
 
             history.value = history_array.join("");
